@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #0f0f0f;
+    margin: 0;
+}
+
+#contenedorVidas {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+}
+
+#personaje, #enemigo {
+    position: relative;
+}
+
+#personajeVida, #enemigoVida {
+    width: 60%;
+    position: absolute;
+    top: 0;
+}
+
+#personaje img, #enemigo img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+#imagenes img, #dimagenes img {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    transition: transform 0.2s ease-in-out;
+}
+
+#imagenes img:hover, #dimagenes img:hover {
+    transform: scale(1.1);
+}
+
+#mensajes {
+    margin: 10px;
+    padding: 10px;
+    background-color: #cc3700; /* Escarlata */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+#mensajes p {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+}

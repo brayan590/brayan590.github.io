@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ss.css">
+    <title>Partida</title>
+</head>
+<body>
+    <div id="contenedorVidas">
+        <div id="personaje">
+            <progress value="100" max="100" id="personajeVida"></progress>
+            <img src="im/among-us-amarilo-caminando.gif" alt="">
+        </div>
+
+        <div id="enemigo">
+            <progress value="100" max="100" id="enemigoVida"></progress>
+            <img src="im/octo.gif" alt="">
+        </div>
+    </div>
+
+    <div id="imagenes">
+        <!-- Ataque del jugador -->
+        <img onclick="aSeleccion('aAgua')" src="im/ataque agua.png" alt="ataque agua" id="imagenAgua">
+        <img onclick="aSeleccion('aFuego')" src="im/ataque fuego.png" alt="ataque fuego" id="imagenFuego">
+        <img onclick="aSeleccion('aTierra')" src="im/ataque tierra.jpg" alt="ataque tierra" id="imagenTierra">
+    </div>
+    
+    <div id="dimagenes">
+        <!-- Defensas del jugador -->
+        <img onclick="dSeleccion('deAgua')" src="im/escudo agua.png" alt="defensa agua" id="imagenedAgua">
+        <img onclick="dSeleccion('deFuego')" src="im/escudo fuego.png" alt="defensa fuego" id="imagenedFuego">
+        <img onclick="dSeleccion('deTierra')" src="im/escudo piedra.png" alt="defensa tierra" id="imagenedTierra">
+    </div>
+
+    <div id="mensajes"></div>
+
+    <script src="mm.js"></script>
+</body>
+</html>
